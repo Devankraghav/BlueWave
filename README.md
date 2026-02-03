@@ -1,4 +1,5 @@
 # blue_wave
+A real-time chat Application built with flutter and firebase.
 
 A new Flutter project.
 
