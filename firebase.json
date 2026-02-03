@@ -1,0 +1,49 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "blue-wave-8f742",
+          "appId": "1:36931071790:android:64c82ebebfaabef2cf14bf",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "blue-wave-8f742",
+          "configurations": {
+            "android": "1:36931071790:android:64c82ebebfaabef2cf14bf",
+            "ios": "1:36931071790:ios:325248054ea02d02cf14bf",
+            "macos": "1:36931071790:ios:325248054ea02d02cf14bf",
+            "web": "1:36931071790:web:b957c8bfbdee3d3bcf14bf",
+            "windows": "1:36931071790:web:0c2a853abca07db8cf14bf"
+          }
+        }
+      }
+    }
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ],
+      "predeploy": [
+        "npm --prefix \"$RESOURCE_DIR\" run lint"
+      ]
+    }
+  ],
+  "emulators": {
+    "dataconnect": {
+      "dataDir": "dataconnect/.dataconnect/pgliteData"
+    }
+  },
+  "dataconnect": {
+    "source": "dataconnect"
+  }
+}
